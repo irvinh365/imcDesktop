@@ -15,17 +15,17 @@
                 <Label Content="Peso en kilogramos:"/>
                 <TextBox x:Name="pesoTextBox"/>
                 <Label Content="Statura en metros :"/>
-                <TextBox x:Name="sataturaTextbox"
+                <TextBox x:Name="estaturaTextbox"
                          Margin="4"/>
                 <StackPanel Orientation="Horizontal"
                             Margin="8"
                             HorizontalAlignment="Center">
                     <Button x:Name="calcularButton"
-                            Content="Calcular" Margin="4"/>
+                            Content="Calcular" Margin="4" Click="calcularButton_Click"/>
                     <Button x:Name="limpiarButton"
                             Content="Limpiar"
                             Margin="4"
-                            MinWidth="80"/>
+                            MinWidth="80" Click="limpiarButton_Click"/>
                 </StackPanel>
             </StackPanel>
         </Border>
@@ -42,7 +42,7 @@
                            FontWeight="Bold"
                            HorizontalAlignment="Center"
                            FontSize="20"
-                           x:Name="imcTextBox"/>
+                           x:Name="imcTextBloc"/>
                 <TextBlock Text="La situación nutricional de la persona es :"/>
                 <TextBlock Text="Peso normal"
                            x:Name="situacionTextblock"
@@ -58,7 +58,7 @@
                 Content="Salir"
                 HorizontalAlignment="Center"
                 Margin="8"
-                MinWidth="100"/>
+                MinWidth="100" Click="salirButton_Click"/>
 
     </StackPanel>
 </Window>
